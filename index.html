@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrainICSI | Micromanipulation Simulation for Clinical Embryology</title>
+<meta name="description" content="TrainICSI is an advanced micromanipulation simulation system designed to accelerate practical training in clinical embryology through realistic controls, simulated microscopy, guided practice and intelligent performance analysis.">
+<link rel="canonical" href="https://trainicsi.com/">
+<meta name="theme-color" content="#0A1416">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TrainICSI">
+<meta property="og:url" content="https://trainicsi.com/">
+<meta property="og:title" content="TrainICSI | Micromanipulation Simulation for Clinical Embryology">
+<meta property="og:description" content="Train the hands before the hands touch the lab. A micromanipulation simulation system for clinical embryology training, by Shreeji MedTech.">
+<!-- ASSET: 1200x630 share image. See README §3. -->
+<meta property="og:image" content="https://trainicsi.com/assets/logo/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TrainICSI | Micromanipulation Simulation for Clinical Embryology">
+<meta name="twitter:description" content="A micromanipulation simulation system designed to accelerate practical training in clinical embryology.">
+<meta name="twitter:image" content="https://trainicsi.com/assets/logo/og-image.jpg">
+
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/logo/favicon-256.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<!-- Failsafe: if JS is off or fails, content must still be visible. -->
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Shreeji MedTech Private Limited",
+  "alternateName":"TrainICSI",
+  "url":"https://trainicsi.com/",
+  "logo":"https://trainicsi.com/assets/logo/trainicsi-logo.png",
+  "address":{"@type":"PostalAddress","addressLocality":"Jaipur","addressRegion":"Rajasthan","addressCountry":"IN"},
+  "makesOffer":{"@type":"Offer","itemOffered":{
+    "@type":"Product","name":"TrainICSI",
+    "description":"A micromanipulation simulation system for clinical embryology training."}}
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Shared glyph: the target-and-arrow motif lifted from the TrainICSI mark.
+     Reused as the site's bullet/precision mark so list markers carry the brand
+     rather than generic dots. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="g-target" viewBox="0 0 24 24">
+    <path d="M12 4.6A7.4 7.4 0 1 0 19.4 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M12 12 19 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo" aria-label="TrainICSI — home">
+    <img src="assets/logo/trainicsi-logo.png" alt="TrainICSI" width="508" height="123">
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#solution">TrainICSI</a>
+    <a href="#how">How It Works</a>
+    <a href="#modes">Training</a>
+    <a href="#intelligence">Intelligence</a>
+    <a href="#institutions">For Institutions</a>
+    <a href="#vision">Vision</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <a href="#contact" class="btn btn-ghost">Contact</a>
+    <a href="#contact" class="btn btn-primary">Book a Demo</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel"><i></i></button>
+  </div>
+</header>
+
+<nav class="nav-panel" id="navPanel" aria-label="Mobile">
+  <a href="#solution">TrainICSI</a>
+  <a href="#how">How It Works</a>
+  <a href="#modes">Training</a>
+  <a href="#intelligence">Intelligence</a>
+  <a href="#institutions">For Institutions</a>
+  <a href="#vision">Vision</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary">Book a Demo</a>
+</nav>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-eyebrow">
+        <!-- The one orchestrated motion moment on the page: the mark draws itself in on load. -->
+        <svg class="brand-badge" id="badge" viewBox="0 0 40 40" aria-hidden="true">
+          <path class="bb-pent" d="M20 3.5 35.5 15 29.7 33H10.3L4.5 15Z" fill="none" stroke="#1DA7D3" stroke-width="2.4"/>
+          <path class="bb-ring" d="M20 15.5A6 6 0 1 0 25.6 19" fill="none" stroke="#2FCB9E" stroke-width="2.2" stroke-linecap="round"/>
+          <path class="bb-arrow" d="M25.5 13.5 18 21" fill="none" stroke="#2FCB9E" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span class="coord">TRAINICSI — AN INITIATIVE BY SHREEJI MEDTECH</span>
+      </div>
+
+      <h1 class="h-display">Train the hands before the hands touch the lab.</h1>
+      <p class="lede">TrainICSI is an advanced micromanipulation simulation system designed to accelerate practical learning in clinical embryology — from ICSI and embryo biopsy to the fine controls that make micromanipulation possible.</p>
+
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-primary" data-magnet>Book a Demonstration</a>
+        <a href="#solution" class="btn btn-ghost">Explore TrainICSI</a>
+      </div>
+    </div>
+
+    <!--
+      Rendered directly from the real hardware CAD model you supplied — a
+      short, silently looping camera move (not live 3D, just a plain video,
+      so it works everywhere with zero dependencies). poster="" shows the
+      first frame while it loads / if video can't play. Swap for real
+      product photography or footage any time — see README §2.
+    -->
+    <div class="media media-4x5 hero-stage reveal">
+      <video autoplay muted loop playsinline preload="auto"
+        poster="assets/product/poster-hero.jpg"
+        aria-label="A slow camera move around the TrainICSI control unit, rendered from the real hardware model.">
+        <source src="assets/product/hero-loop.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROBLEM ============================ -->
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">01 — THE TRAINING PROBLEM</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">Clinical embryology is hands-on. So why is so much of the training observational?</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">Many aspiring embryologists spend a long time watching before they get sufficient hands-on exposure. That isn't a failure of teaching — it's a consequence of how scarce the resources are.</p>
+    </div>
+
+    <div class="path-compare reveal">
+      <div class="path">
+        <span class="path-label">THE PATH TODAY</span>
+        <div class="path-row is-before">
+          <span class="path-step">Observe</span><span class="path-arrow">&rarr;</span>
+          <span class="path-step">Wait</span><span class="path-arrow">&rarr;</span>
+          <span class="path-step">Limited practice</span><span class="path-arrow">&rarr;</span>
+          <span class="path-step">Repeat</span>
+        </div>
+      </div>
+
+      <p class="path-bridge">What if practical learning didn't have to wait for the laboratory?</p>
+
+      <div class="path">
+        <span class="path-label is-good">THE PATH WITH TRAINICSI</span>
+        <div class="path-row is-after">
+          <span class="path-step">Practice</span><span class="path-arrow">&rarr;</span>
+          <span class="path-step">Analyse</span><span class="path-arrow">&rarr;</span>
+          <span class="path-step">Improve</span><span class="path-arrow">&rarr;</span>
+          <span class="path-step">Repeat</span>
+        </div>
+      </div>
+    </div>
+
+    <ul class="bullets mt">
+      <li class="reveal"><svg class="glyph"><use href="#g-target"/></svg>Limited access to microscope and micromanipulator setups</li>
+      <li class="reveal"><svg class="glyph"><use href="#g-target"/></svg>Dependence on biological sample availability</li>
+      <li class="reveal"><svg class="glyph"><use href="#g-target"/></svg>Consumable cost attached to every repeated attempt</li>
+      <li class="reveal"><svg class="glyph"><use href="#g-target"/></svg>Trainer availability for one-to-one supervision</li>
+      <li class="reveal"><svg class="glyph"><use href="#g-target"/></svg>Understandable caution about beginners on costly equipment</li>
+      <li class="reveal"><svg class="glyph"><use href="#g-target"/></svg>Difficulty giving large cohorts repeated practice</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ SOLUTION ============================ -->
+<section class="section band-dim" id="solution">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">02 — THE SOLUTION</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">Meet TrainICSI. A new way to practice micromanipulation.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">TrainICSI combines physical controls with a simulated microscopic environment, so practice no longer depends on a biological sample being available that day. What you're looking at is the real control hardware, rendered from the CAD model — the workstation also includes a dedicated microscope simulator, covered further down.</p>
+    </div>
+
+    <!-- Rendered from the real hardware model (same source as the hero video) -->
+    <div class="media media-16x10 reveal">
+      <video autoplay muted loop playsinline preload="auto"
+        poster="assets/product/poster-pair.jpg"
+        aria-label="A slow camera move around the matched pair of TrainICSI control units, rendered from the real hardware model.">
+        <source src="assets/product/solution-loop.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ HOW IT WORKS ============================ -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">03 — HOW IT WORKS</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">From physical control to measured improvement.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">Every session runs the same loop. The numbering here is a real sequence, not decoration.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal"><span class="si">01</span><h4>Control</h4><p>The trainee operates physical controls similar to those on a micromanipulation workstation.</p></div>
+      <div class="step reveal" data-delay="1"><span class="si">02</span><h4>Simulate</h4><p>Those movements are translated into the TrainICSI simulated microscopic environment.</p></div>
+      <div class="step reveal" data-delay="2"><span class="si">03</span><h4>See</h4><p>The trainee views the simulated microenvironment through the microscope simulator.</p></div>
+      <div class="step reveal"><span class="si">04</span><h4>Practice</h4><p>Procedures are repeated to build precision, hand-eye coordination and muscle memory.</p></div>
+      <div class="step reveal" data-delay="1"><span class="si">05</span><h4>Analyse</h4><p>Important interactions are tracked and measured against configurable parameters.</p></div>
+      <div class="step reveal" data-delay="2"><span class="si">06</span><h4>Improve</h4><p>The system surfaces insights and recommendations that shape the next session.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTROLS ============================
+     Hotspot percentages below were computed mathematically (not eyeballed)
+     from the exact camera used to render control-cluster.jpg, so they sit
+     precisely on the real knobs — verified by overlaying the computed
+     points back onto the render before committing to these numbers. If
+     that image is ever re-rendered from a different angle, these four
+     left/top values need recalculating to match. -->
+<section class="section band-dim" id="controls">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">04 — THE CONTROL SYSTEM</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">Controls that correspond to the workstation.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">Designed to replicate the control experience and hand-eye coordination demands of micromanipulation. Hover or tap a marker to see what each control does.</p>
+    </div>
+
+    <div class="rig-grid">
+      <div class="media media-4x3 rig reveal" id="rig">
+        <img src="assets/product/control-cluster.jpg" alt="Close-up of the TrainICSI control cluster, rendered from the hardware model." loading="lazy">
+        <button class="hotspot" style="left:24.6%;top:42.6%" data-t="Coarse control dial" data-d="Large-range positioning across the working field." aria-label="Coarse control dial"></button>
+        <button class="hotspot" style="left:59.5%;top:42.5%" data-t="Fine adjustment knob" data-d="Micron-scale control during approach and injection." aria-label="Fine adjustment knob"></button>
+        <button class="hotspot" style="left:72%;top:35.5%" data-t="Status &amp; calibration pins" data-d="System-status indicators on the control housing." aria-label="Status and calibration pins"></button>
+        <button class="hotspot" style="left:89.3%;top:16.9%" data-t="Pipette mount" data-d="Where the pipette shaft seats into the arm." aria-label="Pipette mount"></button>
+        <div class="tip" id="tip"><strong id="tipT"></strong><span id="tipD"></span></div>
+      </div>
+
+      <ul class="legend reveal" data-delay="1">
+        <li><svg class="glyph"><use href="#g-target"/></svg>Coarse control dial — large-range positioning</li>
+        <li><svg class="glyph"><use href="#g-target"/></svg>Fine adjustment knob — micron-scale control</li>
+        <li><svg class="glyph"><use href="#g-target"/></svg>Status &amp; calibration pins</li>
+        <li><svg class="glyph"><use href="#g-target"/></svg>Pipette mount</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MICROSCOPE ============================ -->
+<section class="section band-dark" id="microscope">
+  <div class="container scope-grid">
+    <div>
+      <div class="eyebrow"><span class="coord">05 — THE MICROSCOPE SIMULATOR</span><hr class="rule"></div>
+      <h2 class="h-1 reveal">The microscope isn't just a screen.</h2>
+      <p class="lede reveal" data-delay="1">TrainICSI uses a dedicated physical microscope simulator built around the familiar act of looking through eyepieces — a more immersive way to train than learning the procedure on a conventional monitor.</p>
+      <!-- ASSET: photograph of the microscope simulator hardware.
+           Drop it in beside this copy: assets/microscope/eyepiece-unit.jpg -->
+      <div class="media media-16x10 mt reveal" data-delay="2">
+        <div class="slot"><span class="tag">SIMULATOR PHOTOGRAPH</span><span>assets/microscope/eyepiece-unit.jpg</span></div>
+      </div>
+    </div>
+
+    <!--
+      ASSET NEEDED — a screen capture of the real simulated field (as seen
+      through the eyepiece), or a straight-on photo of the eyepiece unit
+      itself. Drop it at assets/microscope/eyepiece-view.jpg and swap the
+      .slot div for an <img>, keeping the circular frame.
+    -->
+    <div class="scope-eye reveal">
+      <div class="slot">
+        <svg class="slot-icon" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="20" cy="20" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        </svg>
+        <span class="tag">EYEPIECE VIEW NEEDED</span>
+        <span>A capture of the simulated field, or a photo of the eyepiece unit</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROCEDURES ============================ -->
+<section class="section" id="procedures">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">06 — PROCEDURES</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">One platform. Multiple micromanipulation procedures.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">Module availability varies by release — ask us which are ready for your institution today.</p>
+    </div>
+
+    <div class="proc-grid reveal">
+      <details class="proc"><summary>ICSI</summary><p>Intracytoplasmic sperm injection — positioning, immobilisation, injection, aspiration and withdrawal.</p></details>
+      <details class="proc"><summary>Embryo biopsy</summary><p>Practice the coordination and sequencing an embryo biopsy demands.</p></details>
+      <details class="proc"><summary>Polar body biopsy</summary><p>Approach, alignment and extraction technique in a simulated setting.</p></details>
+      <details class="proc"><summary>Laser-assisted hatching</summary><p>Familiarisation with positioning and targeting for assisted hatching.</p></details>
+      <details class="proc"><summary>Micromanipulator adjustment</summary><p>Set-up and calibration drills for the micromanipulator arms.</p></details>
+      <details class="proc"><summary>Alignment &amp; needle positioning</summary><p>Foundational drills for pipette alignment, needle positioning and fine control.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MODES ============================ -->
+<section class="section band-dim" id="modes">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">07 — TRAINING MODES</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">Three ways to practice.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">Trainees move from assisted learning through to independent, assessment-ready practice.</p>
+    </div>
+
+    <div class="modes">
+      <div class="mode reveal">
+        <span class="mi">MODE 01</span>
+        <h3>Guided</h3>
+        <span class="mt">Learn with assistance.</span>
+        <p>Tools designed to help trainees understand and practice individual controls and procedural steps.</p>
+        <ul>
+          <li><svg class="glyph glyph-green"><use href="#g-target"/></svg>Guided movement and control assistance</li>
+          <li><svg class="glyph glyph-green"><use href="#g-target"/></svg>Feedback as you work</li>
+          <li><svg class="glyph glyph-green"><use href="#g-target"/></svg>Progressive difficulty</li>
+          <li><svg class="glyph glyph-green"><use href="#g-target"/></svg>Fine-control and muscle-memory drills</li>
+        </ul>
+      </div>
+
+      <div class="mode reveal" data-delay="1">
+        <span class="mi">MODE 02</span>
+        <h3>Unguided</h3>
+        <span class="mt">Practice without the training wheels.</span>
+        <p>A more realistic workstation environment, with the guidance removed.</p>
+        <ul>
+          <li><svg class="glyph glyph-green"><use href="#g-target"/></svg>Realistic, unassisted practice</li>
+          <li><svg class="glyph glyph-green"><use href="#g-target"/></svg>Independent operation</li>
+          <li><svg class="glyph glyph-green"><use href="#g-target"/></svg>Confidence building</li>
+          <li><svg class="glyph glyph-green"><use href="#g-target"/></svg>Assessment preparation</li>
+        </ul>
+      </div>
+
+      <div class="mode reveal" data-delay="2">
+        <span class="mi">MODE 03</span>
+        <h3>Tutorial</h3>
+        <span class="mt">Break complex procedures into skills.</span>
+        <p>The complete ICSI workflow, divided into steps so a trainee can drill the one they need.</p>
+        <div class="chain" id="chain" aria-label="ICSI workflow steps">
+          <span class="is-on">Position</span><span>Approach</span><span>Align</span><span>Immobilise</span>
+          <span>Inject</span><span>Aspirate</span><span>Deaspirate</span><span>Withdraw</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ INTELLIGENCE ============================ -->
+<section class="section" id="intelligence">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">08 — INTELLIGENT PERFORMANCE ANALYSIS</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">Practice is useful. Measured practice is better.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">TrainICSI tracks trainee interaction and analyses performance against configurable parameters, returning metrics, strengths and areas to work on after each session.</p>
+    </div>
+
+    <!-- Illustrative UI. Replace with a real screenshot when the dashboard is
+         final: assets/software/session-review.png -->
+    <div class="dash reveal">
+      <div class="dash-head">
+        <span class="who">Session review — J. Mehta</span>
+        <span class="coord">SESSION 0412 · ICSI · 00:14:32 · ILLUSTRATIVE DATA</span>
+      </div>
+      <div class="dash-metrics">
+        <div class="metric"><div class="ml">SPERM IMMOBILIZATION ACCURACY</div><div class="mv">84%</div><div class="bar"><i data-fill="84"></i></div></div>
+        <div class="metric"><div class="ml">OOCYTE INJECTION PRECISION</div><div class="mv">78%</div><div class="bar"><i data-fill="78"></i></div></div>
+        <div class="metric"><div class="ml">CYTOPLASMIC ASPIRATION CONTROL</div><div class="mv">81%</div><div class="bar is-green"><i data-fill="81"></i></div></div>
+        <div class="metric"><div class="ml">TIME PER OOCYTE</div><div class="mv">00:42</div><div class="metric-note">Target &le; 00:50</div></div>
+      </div>
+      <div class="dash-chart">
+        <svg viewBox="0 0 560 130" preserveAspectRatio="none" role="img" aria-label="Illustrative chart showing performance improving across sessions.">
+          <polyline class="spark" id="spark" points="0,108 70,96 140,99 210,72 280,79 350,52 420,56 490,33 560,36"
+            fill="none" stroke="#12718F" stroke-width="2"/>
+        </svg>
+        <p class="coord" style="padding-bottom:.6rem">PERFORMANCE ACROSS SESSIONS — ILLUSTRATIVE</p>
+      </div>
+      <p class="dash-note">Illustrative interface. Metrics, thresholds and scoring are configurable per institution and are not final.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MISTAKES ============================ -->
+<section class="section band-dim" id="mistakes">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">09 — SAFE, REPEATABLE PRACTICE</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">Make mistakes here. Learn from them before they matter in the lab.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">The environment can identify training events and turn them into something a trainee can act on. TrainICSI is designed to help build the foundational control, coordination and procedural familiarity micromanipulation requires — it does not certify clinical competence.</p>
+    </div>
+
+    <ul class="events reveal">
+      <li><span class="t">00:02:14</span><span>Needle approach within tolerance</span><span class="b">LOGGED</span></li>
+      <li class="flag"><span class="t">00:04:41</span><span>Excessive aspiration pressure</span><span class="b">FLAGGED</span></li>
+      <li><span class="t">00:07:02</span><span>Realignment — improved trajectory</span><span class="b">LOGGED</span></li>
+      <li class="flag"><span class="t">00:09:58</span><span>Inefficient movement path</span><span class="b">FLAGGED</span></li>
+      <li class="flag"><span class="t">00:11:06</span><span>Needle-breaking event</span><span class="b">FLAGGED</span></li>
+      <li><span class="t">00:12:20</span><span>Withdrawal — clean release</span><span class="b">LOGGED</span></li>
+    </ul>
+    <p class="small-print mt">Illustrative event log. Names and data throughout this site are fictional.</p>
+  </div>
+</section>
+
+<!-- ============================ CLOUD ============================ -->
+<section class="section band-dark" id="cloud">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">10 — CLOUD &amp; DASHBOARDS</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">Every session, in context.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">Practice data can be associated with individual trainees and reviewed cumulatively across a whole training programme.</p>
+    </div>
+
+    <div class="cflow reveal">
+      <div class="cnode"><div class="cl">Trainee</div><div class="cs">LIVE SESSION</div></div>
+      <div class="cwire"><i></i></div>
+      <div class="cnode"><div class="cl">TrainICSI system</div><div class="cs">INTERACTION CAPTURE</div></div>
+      <div class="cwire"><i style="animation-delay:.8s"></i></div>
+      <div class="cnode"><div class="cl">Practice data</div><div class="cs">METRICS &amp; EVENTS</div></div>
+      <div class="cwire"><i style="animation-delay:1.6s"></i></div>
+      <div class="cnode"><div class="cl">Cloud</div><div class="cs">SECURE SYNC</div></div>
+      <div class="cwire"><i style="animation-delay:2.4s"></i></div>
+      <div class="cnode"><div class="cl">Dashboard</div><div class="cs">TRAINER &amp; STUDENT</div></div>
+    </div>
+
+    <div class="steps mt" style="grid-template-columns:1fr 1fr; background:var(--on-dark-line); border-color:var(--on-dark-line)">
+      <div class="step reveal" style="background:var(--dark-2); color:var(--on-dark)">
+        <h4>Trainer dashboard</h4>
+        <p style="color:var(--on-dark-soft)">Individual performance, cumulative progress, session history, comparative progress across a cohort, areas needing attention, assessment data and training analytics.</p>
+      </div>
+      <div class="step reveal" data-delay="1" style="background:var(--dark-2); color:var(--on-dark)">
+        <h4>Student dashboard</h4>
+        <p style="color:var(--on-dark-soft)">Personal progress, practice history, improvement over time, AI-assisted analysis of sessions and recommendations on what to drill next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ INSTITUTIONS ============================ -->
+<section class="section" id="institutions">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">11 — FOR TRAINERS &amp; INSTITUTIONS</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">Train more people. Without multiplying your laboratory setup.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">Designed to create a measurable, repeatable environment for skill development — one that can reduce dependence on samples, consumables and constant one-to-one supervision.</p>
+    </div>
+
+    <div class="benefits reveal">
+      <div class="benefit"><h4>Scale</h4><p>Train larger cohorts within the same laboratory footprint.</p></div>
+      <div class="benefit"><h4>Standardise</h4><p>Give every trainee a consistent practice environment.</p></div>
+      <div class="benefit"><h4>Measure</h4><p>Track progress against defined, configurable parameters.</p></div>
+      <div class="benefit"><h4>Assess</h4><p>Use performance data as an additional practical assessment input.</p></div>
+      <div class="benefit"><h4>Protect</h4><p>Let beginners build fundamentals before touching valuable resources.</p></div>
+      <div class="benefit"><h4>Repeat</h4><p>Give trainees room to practice as many times as they need.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ WHY SIMULATION ============================ -->
+<section class="section band-dim" id="why">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">12 — WHY SIMULATION-BASED TRAINING</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">An evolution of the existing training ecosystem.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">TrainICSI is built to sit alongside laboratory training, not to replace it — relieving pressure on the scarcest resources.</p>
+    </div>
+
+    <div class="compare reveal">
+      <div class="compare-col a">
+        <h4>TRADITIONAL CONSTRAINTS</h4>
+        <ul>
+          <li>Limited practice time</li>
+          <li>Dependent on biological samples</li>
+          <li>Ongoing consumable cost</li>
+          <li>Equipment availability</li>
+          <li>Trainer availability</li>
+          <li>Difficult to scale</li>
+          <li>Limited measurable data</li>
+        </ul>
+      </div>
+      <div class="compare-col b">
+        <h4>SIMULATION-ENABLED TRAINING</h4>
+        <ul>
+          <li>Repeatable practice</li>
+          <li>No biological sample required for simulation sessions</li>
+          <li>Reduced consumable dependence</li>
+          <li>Dedicated training environment</li>
+          <li>Guided learning built in</li>
+          <li>Scalable across cohorts</li>
+          <li>Trackable, reviewable performance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PHILOSOPHY ============================ -->
+<section class="section" id="philosophy">
+  <div class="container">
+    <div class="eyebrow"><span class="coord">13 — THE IDEA UNDERNEATH</span><hr class="rule"></div>
+    <h2 class="h-1 reveal mb" style="max-width:20ch">Don't just watch the procedure. Practice the movements.</h2>
+    <p class="lede reveal" data-delay="1" style="max-width:62ch">Hand-eye coordination, fine motor control, spatial understanding and instrument familiarity are built through repetition, not observation. Confidence and procedural sequencing follow the same path. Everything TrainICSI does is in service of one shift: from observation to deliberate practice.</p>
+  </div>
+</section>
+
+<!-- ============================ TESTIMONIALS ============================ -->
+<section class="section band-dim" id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">14 — EXPERT VOICES</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">From the field.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">A small number of voices, chosen for who they are rather than how many there are.</p>
+    </div>
+
+    <!--
+      TESTIMONIALS — see README §5 for the editorial recommendation
+      (lead with 4–6 significant names rather than all of them).
+      To add one, copy this block and fill it in:
+
+      <figure class="tcard">
+        <blockquote class="tquote">Their words, verbatim and approved.</blockquote>
+        <figcaption class="twho">
+          <img class="tavatar" src="assets/testimonials/name.jpg" alt="Dr Name" loading="lazy">
+          <span>
+            <span class="tname">Dr Name</span>
+            <span class="trole">Designation, Institution</span>
+          </span>
+        </figcaption>
+      </figure>
+
+      Never invent a quote or an attribution. Leave the dashed placeholders
+      in place until a real, approved quote replaces each one.
+    -->
+    <div class="tcar reveal">
+      <div class="ttrack" id="ttrack">
+        <div class="tcard is-slot"><span>EXPERT TESTIMONIAL TO BE ADDED</span></div>
+        <div class="tcard is-slot"><span>EXPERT TESTIMONIAL TO BE ADDED</span></div>
+        <div class="tcard is-slot"><span>EXPERT TESTIMONIAL TO BE ADDED</span></div>
+        <div class="tcard is-slot"><span>EXPERT TESTIMONIAL TO BE ADDED</span></div>
+      </div>
+      <div class="carousel-nav">
+        <button class="cbtn" id="tPrev" aria-label="Previous testimonial">&larr;</button>
+        <div class="cdots" id="tDots"></div>
+        <button class="cbtn" id="tNext" aria-label="Next testimonial">&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONFERENCES ============================ -->
+<section class="section-tight" id="conferences">
+  <div class="container">
+    <div class="eyebrow"><span class="coord">15 — PRESENCE</span><hr class="rule"></div>
+    <h3 class="h-3 reveal mb">From the lab to the community.</h3>
+
+    <!--
+      CONFERENCES — one card per event, not per photo. Each card shows three
+      preview tiles plus a count, and opens a gallery of that event's photos.
+      data-images is a JSON array of paths; data-title is the caption.
+      Curate 6–10 photos per event rather than uploading everything — README §6.
+    -->
+    <div class="conf-strip reveal">
+      <button class="conf" data-title="Conference name, city, year"
+        data-images='["assets/conferences/event-1/01.jpg","assets/conferences/event-1/02.jpg","assets/conferences/event-1/03.jpg","assets/conferences/event-1/04.jpg","assets/conferences/event-1/05.jpg","assets/conferences/event-1/06.jpg"]'>
+        <div class="collage">
+          <div class="cell">01</div><div class="cell">02</div><div class="cell">03</div>
+          <div class="more">+3</div>
+        </div>
+        <p class="conf-cap">Conference name — placeholder</p>
+        <p class="conf-meta">CITY · YEAR · 6 PHOTOS</p>
+      </button>
+
+      <button class="conf" data-title="Workshop &amp; live demonstration"
+        data-images='["assets/conferences/event-2/01.jpg","assets/conferences/event-2/02.jpg","assets/conferences/event-2/03.jpg","assets/conferences/event-2/04.jpg","assets/conferences/event-2/05.jpg"]'>
+        <div class="collage">
+          <div class="cell">01</div><div class="cell">02</div><div class="cell">03</div>
+          <div class="more">+2</div>
+        </div>
+        <p class="conf-cap">Workshop &amp; live demo — placeholder</p>
+        <p class="conf-meta">CITY · YEAR · 5 PHOTOS</p>
+      </button>
+
+      <button class="conf" data-title="Institutional demonstration day"
+        data-images='["assets/conferences/event-3/01.jpg","assets/conferences/event-3/02.jpg","assets/conferences/event-3/03.jpg","assets/conferences/event-3/04.jpg"]'>
+        <div class="collage">
+          <div class="cell">01</div><div class="cell">02</div><div class="cell">03</div>
+          <div class="more">+1</div>
+        </div>
+        <p class="conf-cap">Institutional demonstration — placeholder</p>
+        <p class="conf-meta">CITY · YEAR · 4 PHOTOS</p>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Event photo gallery" hidden>
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close gallery">&times;</button>
+  <button class="lb-btn" id="lbPrev" aria-label="Previous photo">&larr;</button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-btn" id="lbNext" aria-label="Next photo">&rarr;</button>
+  <div class="lb-cap"><span id="lbTitle"></span><span class="coord" id="lbCount"></span></div>
+</div>
+
+<!-- ============================ SHREEJI / ROADMAP ============================ -->
+<section class="section band-dark" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"><span class="coord">16 — SHREEJI MEDTECH</span><hr class="rule"></div>
+        <h2 class="h-1 reveal">TrainICSI is the beginning. The vision is much bigger.</h2>
+      </div>
+      <p class="lede reveal" data-delay="1">Shreeji MedTech's roadmap looks across the clinical embryology workflow — not training alone.</p>
+    </div>
+
+    <div class="roadmap reveal">
+      <div class="rcard"><span class="rstatus">IN DEVELOPMENT</span><h4>Cryo simulation</h4><p>Simulation and training around freezing and thawing workflows.</p></div>
+      <div class="rcard"><span class="rstatus">IN DEVELOPMENT</span><h4>Lab procedure records</h4><p>Technology-assisted laboratory procedure recording and traceability.</p></div>
+      <div class="rcard"><span class="rstatus">COMING SOON</span><h4>RFID-based workflows</h4><p>Systems inspired by modern witnessing and identity-traceability approaches.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VISION ============================ -->
+<section class="section" id="vision" style="overflow:hidden">
+  <svg class="vision-mark" viewBox="0 0 40 40" aria-hidden="true">
+    <path d="M20 3.5 35.5 15 29.7 33H10.3L4.5 15Z" fill="none" stroke="currentColor" stroke-width="1"/>
+  </svg>
+  <div class="container">
+    <div class="eyebrow"><span class="coord">17 — THE BIGGER VISION</span><hr class="rule"></div>
+    <h2 class="h-1 reveal" style="max-width:19ch">Make India a global leader in clinical embryology.</h2>
+    <div class="pillars reveal" data-delay="1">
+      <span>Technology</span><span>Training</span><span>Execution</span><span>Adoption</span>
+    </div>
+    <p class="lede reveal" data-delay="2" style="max-width:62ch">The ambition is to help develop thousands of highly trained clinical embryologists by combining advanced training technology with expert-led programmes and institutional collaboration — an ecosystem offering practical exposure, structured training, measurable learning and repeated practice. Better training in India can create better outcomes for the field globally.</p>
+  </div>
+</section>
+
+<!-- ============================ COLLABORATION ============================ -->
+<section class="section band-dim" id="collaborate">
+  <div class="container">
+    <h2 class="h-2 reveal mb" style="max-width:18ch">Building the future of embryology takes a community.</h2>
+    <p class="lede reveal" data-delay="1">We would be happy to collaborate with institutions, embryologists, educators, fertility centres, technology partners and organisations that share our vision of advancing clinical embryology through technology and practical education.</p>
+    <div class="btn-row mt reveal" data-delay="2">
+      <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
+      <a href="#contact" class="btn btn-ghost">Book a Demonstration</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOUNDERS ============================ -->
+<section class="section" id="founders">
+  <div class="container">
+    <div class="eyebrow"><span class="coord">18 — FOUNDERS</span><hr class="rule"></div>
+    <h3 class="h-3 reveal mb">Leading the initiative.</h3>
+    <div class="founders reveal">
+      <!-- ASSET: assets/founders/apratim-arora.jpg — swap the div for an <img class="fphoto"> -->
+      <div class="founder">
+        <div class="fphoto"></div>
+        <div>
+          <div class="fname">Apratim Arora</div>
+          <div class="frole">Director, Shreeji MedTech</div>
+          <p class="fbio">Biography to be added.</p>
+        </div>
+      </div>
+      <!-- ASSET: assets/founders/lokesh-sureliya.jpg -->
+      <div class="founder">
+        <div class="fphoto"></div>
+        <div>
+          <div class="fname">Lokesh Sureliya</div>
+          <div class="frole">Director, Shreeji MedTech</div>
+          <p class="fbio">Biography to be added.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="section band-dim" id="contact">
+  <div class="container">
+    <div class="eyebrow"><span class="coord">19 — CONTACT</span><hr class="rule"></div>
+    <h2 class="h-1 reveal mb">Let's build better training together.</h2>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="cdetail"><div class="dl">ORGANISATION</div><div class="dv">Shreeji MedTech Pvt. Ltd. · TrainICSI</div></div>
+        <div class="cdetail"><div class="dl">LOCATION</div><div class="dv">Jaipur, Rajasthan, India</div></div>
+        <!-- ASSET: real email + phone -->
+        <div class="cdetail"><div class="dl">EMAIL</div><div class="dv">[EMAIL TO BE PROVIDED]</div></div>
+        <div class="cdetail"><div class="dl">PHONE</div><div class="dv">[PHONE TO BE PROVIDED]</div></div>
+        <hr class="rule mt">
+        <p class="small-print" style="margin-top:1.2rem">We usually reply within two to three working days.</p>
+      </div>
+
+      <!--
+        FORM — posts to Web3Forms. Paste your access key below (README §4).
+        Submissions arrive by email; nothing is stored on the site.
+      -->
+      <form class="form reveal" id="form" action="https://api.web3forms.com/submit" method="POST" data-delay="1">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="New enquiry from trainicsi.com">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="frow">
+          <div class="field"><label for="n">Name</label><input id="n" name="name" type="text" required autocomplete="name"></div>
+          <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email"></div>
+        </div>
+        <div class="frow">
+          <div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="o">Organisation / institution</label><input id="o" name="organisation" type="text"></div>
+        </div>
+        <div class="frow">
+          <div class="field"><label for="l">City / country</label><input id="l" name="location" type="text"></div>
+          <div class="field"><label for="t">Enquiry type</label>
+            <select id="t" name="enquiry_type">
+              <option>Book a demonstration</option>
+              <option>Institutional deployment</option>
+              <option>Purchase enquiry</option>
+              <option>Training collaboration</option>
+              <option>Research collaboration</option>
+              <option>Partnership</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="s">Number of trainees / institution size (optional)</label><input id="s" name="institution_size" type="text"></div>
+        <div class="field"><label for="m">Message</label><textarea id="m" name="message" required></textarea></div>
+        <label class="fcheck"><input type="checkbox" name="wants_demo" value="Yes"> I'd like to see a TrainICSI demonstration</label>
+
+        <div class="ffoot">
+          <button type="submit" class="btn btn-primary">Send enquiry</button>
+          <span class="fstatus" id="fstatus" role="status" aria-live="polite"></span>
+        </div>
+        <p class="small-print" style="margin-top:0.9rem">We use these details only to reply to your enquiry. Nothing is shared with third parties.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FINAL CTA ============================ -->
+<section class="final band-dark">
+  <div class="container">
+    <h2 class="h-1 reveal">The future of embryology training can be practiced today.</h2>
+    <a href="#contact" class="btn btn-primary reveal" data-delay="1" data-magnet>Book a TrainICSI demonstration</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo/trainicsi-logo.png" alt="TrainICSI" width="508" height="123">
+        <p>An initiative by Shreeji MedTech.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>PRODUCT</h5>
+          <a href="#solution">TrainICSI</a>
+          <a href="#how">How it works</a>
+          <a href="#modes">Training modes</a>
+          <a href="#intelligence">Performance analysis</a>
+        </div>
+        <div class="footer-col">
+          <h5>COMPANY</h5>
+          <a href="#institutions">For institutions</a>
+          <a href="#vision">Vision</a>
+          <a href="#about">Shreeji MedTech</a>
+          <a href="#founders">Founders</a>
+        </div>
+        <div class="footer-col">
+          <h5>CONNECT</h5>
+          <!-- ASSET: LinkedIn URL, email address -->
+          <a href="#contact">LinkedIn</a>
+          <a href="#contact">Email</a>
+          <a href="#contact">Book a demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yr"></span> Shreeji MedTech Private Limited. TrainICSI and the TrainICSI mark are trademarks of Shreeji MedTech Private Limited.</span>
+      <span>Advancing clinical embryology through technology, training and practical education.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
