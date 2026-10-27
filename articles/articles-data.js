@@ -1,0 +1,1 @@
+window.TRAINICSI_ARTICLES = [];
